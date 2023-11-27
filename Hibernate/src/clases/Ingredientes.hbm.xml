@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 25/11/2023, 10:36:59 p. m. by Hibernate Tools 6.3.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="recetario_luzdelicias" name="clases.Ingredientes" optimistic-lock="none" table="ingredientes">
+        <id name="idIngrediente" type="int">
+            <column name="id_ingrediente"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="nombreIngrediente" type="string">
+            <column length="50" name="nombre_ingrediente" not-null="true"/>
+        </property>
+        <property name="cantidad" type="string">
+            <column length="10" name="cantidad" not-null="true"/>
+        </property>
+        <property name="unidadDeMedida" type="string">
+            <column length="10" name="unidad_de_medida" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
